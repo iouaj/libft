@@ -11,13 +11,3 @@ void *ft_memchr(const void *s, int c, size_t n)
         return (NULL);
     return (((unsigned char *)s) + i);
 }
-
-#include <stdio.h>
-
-int main()
-{
-    char str[] = "Coucou";
-
-    printf("%p\n", str);
-    printf("%p", ft_memchr(str, 0, 7));
-}
