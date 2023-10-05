@@ -19,14 +19,3 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     }
     return (dest);
 }
-
-#include <stdio.h>
-
-int main()
-{
-    char str[] = "Coucou";
-    char dest[] = "test";
-
-    ft_memmove(dest, str, 4);
-    printf("%s", dest);
-}
